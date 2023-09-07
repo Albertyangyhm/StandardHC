@@ -4,10 +4,14 @@ import matplotlib.pyplot as plt
 import logging
 import copy
 
-from scripts import linkageList
-from scripts import reclusterTree
-from scripts import beamSearchOptimal as beamSearch
-from scripts.utils import get_logger
+# from scripts import linkageList
+# from scripts import reclusterTree
+# from scripts import beamSearchOptimal as beamSearch
+# from scripts.utils import get_logger
+from src.StandardHC import linkageList
+from src.StandardHC import reclusterTree_invM as reclusterTree
+from src.StandardHC import beamSearchOptimal_invM as beamSearch
+from .utils import get_logger
 
 logger = get_logger(level=logging.INFO)
 

@@ -143,7 +143,6 @@ def enrich_jet_logLH(jet, delta_min=None, dij=False, alpha = None):
 
     jet["logLH"] = np.asarray(logLH)
     jet["dij"] = dijList
-
     return jet
 
 

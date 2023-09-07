@@ -125,7 +125,7 @@ def recluster(input_jet, alpha=None, save=True, out_dir = None):
     algo = str(input_jet["name"]) + '_' + str(alpha)
     out_filename = out_dir + str(algo) + '.pkl'
     logger.info(f"Output jet filename = {out_filename}")
-    with open(out_filename, "wb") as f:
+    with open(out_filename, "wb+") as f:
       pickle.dump(jet, f, protocol=2)
 
 

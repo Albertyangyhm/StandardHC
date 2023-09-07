@@ -7,12 +7,12 @@ import copy
 import argparse
 import os
 
-from . import reclusterTree
+from . import reclusterTree_invM as reclusterTree
 from . import linkageList
 from . import heatClustermap
-from . import likelihood
-from . import N2Greedy
-from . import beamSearchOptimal as BSO
+from . import likelihood_invM as likelihood
+from . import N2Greedy_invM as N2Greedy
+from . import beamSearchOptimal_invM as BSO
 from .utils import get_logger
 
 logger = get_logger(level=logging.INFO)
